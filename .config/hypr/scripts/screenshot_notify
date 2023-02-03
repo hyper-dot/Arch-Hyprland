@@ -1,0 +1,2 @@
+#!/bin/sh
+exec notify-send "Screenshot Captured and sotred in ~/Pictures"

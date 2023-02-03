@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# wrappedhl
+# Launch Hyprland with a simple wrapper
+#
+cd ~/
+
+# Variables
+export _JAVA_AWT_WM_NONREPARENTING=1
+export XCURSOR_SIZE=24
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export SDL_IM_MODULE=fcitx
+export GLFW_IM_MODULE=ibus
+
+# qt applications
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_QPA_PLATFORM="wayland"
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+#env variables for gtk
+gsettings set org.gnome.desktop.interface icon-theme 'Win11-dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Gruvbox-Dark-BL'
+gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur Cursors'
+gsettings set org.gnome.desktop.interface font-name 'JetBrains Mono NL SemiBold'
+
+# Execute Hyprland
+if [ -f /usr/local/bin/Hyprland ]; then
+   exec /usr/local/bin/Hyprland >/dev/null 2>&1 
+elif [ -f /usr/bin/Hyprland ]; then
+   exec /usr/bin/Hyprland >/dev/null 2>&1 
+fi
