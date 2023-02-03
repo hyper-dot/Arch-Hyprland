@@ -1,3 +1,4 @@
+> Open to any suggestions and collaborations 
 # Arch-Hyprland
 My arch linux hyprland setup 
 
