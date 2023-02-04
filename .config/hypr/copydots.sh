@@ -4,7 +4,6 @@
 cp -r ~/.local/bin/wrappedhl ~/Arch-Hyprland/.local/bin
 
 # Copies all config files from .config directory
-cp -r ~/.config/vlc/ ~/Arch-Hyprland/.config/
 cp -r ~/.config/waybar/ ~/Arch-Hyprland/.config/
 cp -r ~/.config/Thunar/ ~/Arch-Hyprland/.config/
 cp -r ~/.config/lvim/config.lua ~/Arch-Hyprland/.config/lvim/
