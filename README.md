@@ -15,7 +15,7 @@
 
 ### Dependencies :
 ```sh
-paru --needed -S polkit-kde-agent dunst grim rofi rofi-emoji \
+yay --needed -S polkit-kde-agent dunst grim rofi rofi-emoji \
 wl-clipboard wf-recorder hyprpicker-git hyprpaper-git \
 xdg-desktop-portal-hyprland-git ffmpegthumbnailer tumbler  \
 swaylock-effects qt5-wayland qt6-wayland ripgrep  \
@@ -24,7 +24,7 @@ waybar-hyprland-git
 ```
 ### Fonts :
 ```sh
-paru --needed -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd noto-fonts-emoji
+yay --needed -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd noto-fonts-emoji
 
 ```
 
