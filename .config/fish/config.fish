@@ -3,6 +3,7 @@ if status is-interactive
     export PATH="/home/linux/.deta/bin:$PATH"
     export PATH="/home/linux/.local/bin:$PATH"
     export PATH="/home/linux/.yarn/bin/:$PATH"
+    export PATH="/home/linux/.npm-global/bin/:$PATH"
     
     #Navigating files and dir
     alias ls='exa --icons'
@@ -23,8 +24,10 @@ if status is-interactive
     # Clear Terminal
     alias cl="clear"
 
-    # Alias for lvim 
-    alias lv="lvim"
+    # Alias for neovim 
+    alias lv="nvim"
+    alias nv="nvim"
+    alias nvc="cd ~/.config/nvim/ && nvim"
 
     # Finds file 
     alias fh="find ~/ -name $1" 
