@@ -26,8 +26,8 @@ local on_attach = function(client, bufnr)
 	k.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
 	k.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
 	k.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
-	k.set("n", "<leader>D", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
-	k.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
+	k.set("n", "<leader>D", "<cmd>Lspsaga show_buf_diagnostics<CR>", opts) -- show  diagnostics for line
+	k.set("n", "<leader>d", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show diagnostics for cursor
 	k.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
 	k.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
 	k.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
@@ -88,24 +88,5 @@ lspconfig["lua_ls"].setup({
 				},
 			},
 		},
-	},
-})
-
--- Icons for diagnostics
-local signs = { Error = "", Warn = "", Hint = "", Info = "" }
-
-for type, icon in pairs(signs) do
-	local hl = "DiagnosticSign" .. type
-	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-end
-
-vim.diagnostic.config({
-	virtual_text = {
-		prefix = "●",
-	},
-
-	update_in_insert = true,
-	float = {
-		source = "always", --Or 'if_many'
 	},
 })
