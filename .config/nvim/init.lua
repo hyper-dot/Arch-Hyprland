@@ -1,5 +1,3 @@
--- Test 2
--- Test
 -- Core
 require("core.base")
 require("core.keymappings")
