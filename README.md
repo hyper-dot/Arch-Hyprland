@@ -15,7 +15,7 @@
 
 ### Dependencies :
 ```sh
-yay --needed -S polkit-kde-agent dunst grim rofi rofi-emoji \
+yay --needed -S polkit-kde-agent dunst grim rofi-lbonn-wayland-git rofi-emoji \
 wl-clipboard wf-recorder hyprpicker-git hyprpaper-git \
 xdg-desktop-portal-hyprland-git ffmpegthumbnailer tumbler  \
 swaylock-effects qt5-wayland qt6-wayland ripgrep  \
