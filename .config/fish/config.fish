@@ -55,6 +55,6 @@ if status is-interactive
     # Open diffrent config files in lunarvim
     alias hl='lvim ~/.config/hypr/hyprland.conf'
     alias fic='lvim ~/.config/fish/config.fish'
-
+    
 end
 
