@@ -2,9 +2,11 @@ import:
   - ~/.alacritty-colorscheme/themes/pencil_dark.yaml
 
 window:
+  title: 🚀
+  dynamic_title: false
   padding:
-    x: 10
-    y: 10
+    x: 0
+    y: 0
   class:
     instance: Alacritty
     general: Alacritty
@@ -14,29 +16,27 @@ scrolling:
   history: 10000
   multiplier: 3
 
-
 font:
   normal:
     family: JetBrains Mono Nerd Font
-    style:  Bold
+    style: SemiBold
   bold:
     family: JetBrains Mono Nerd Font
-    style:  Bold
+    style: Bold
   italic:
     family: JetBrains Mono Nerd Font
-    style:  MediumItalic
+    style: MediumItalic
   bold_italic:
     family: JetBrains Mono Nerd Font
     style: BoldItalic
-  size: 10
+  size: 11
 draw_bold_text_with_bright_colors: true
-
 
 selection:
   save_to_clipboard: false
 
 shell:
-  program: /usr/bin/fish
+  program: /bin/tmux
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
