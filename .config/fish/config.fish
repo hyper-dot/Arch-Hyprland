@@ -23,9 +23,17 @@ if status is-interactive
 
     # Clear Terminal
     alias cl="clear"
+    
+    # Alias for tmux
+    alias t="tmux"
+    alias ta="tmux attach"
+
+
+    # Golang for tmux
+    alias gr="go run"
+    alias gi="go install"
 
     # Alias for neovim 
-    alias lv="nvim"
     alias nv="nvim"
     alias nvc="cd ~/.config/nvim/ && nvim"
 
@@ -57,4 +65,3 @@ if status is-interactive
     alias fic='lvim ~/.config/fish/config.fish'
     
 end
-
