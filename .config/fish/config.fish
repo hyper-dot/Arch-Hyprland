@@ -1,9 +1,10 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    export PATH="/home/linux/.deta/bin:$PATH"
-    export PATH="/home/linux/.local/bin:$PATH"
-    export PATH="/home/linux/.yarn/bin/:$PATH"
-    export PATH="/home/linux/.npm-global/bin/:$PATH"
+    export PATH="/home/linux/.local/bin:$PATH" # local binaries
+    export PATH="/home/linux/.detaspace/bin:$PATH" # dataspace binary
+    export PATH="/home/linux/.yarn/bin/:$PATH" # yarn global binaries
+    export PATH="/home/linux/.npm-global/bin/:$PATH" #npm global binaries
+    export PATH="/home/linux/go/bin/:$PATH" # Golang binaries
     
     #Navigating files and dir
     alias ls='exa --icons'
