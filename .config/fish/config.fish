@@ -30,9 +30,10 @@ if status is-interactive
     alias ta="tmux attach"
 
 
-    # Golang for tmux
+    # Golang 
     alias gr="go run"
     alias gi="go install"
+    alias rgo="okular ~/Documents/Programming-in-Go.pdf"
 
     # Alias for neovim 
     alias nv="nvim"
