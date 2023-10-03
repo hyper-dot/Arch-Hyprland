@@ -1,4 +1,4 @@
-> Open to any suggestions 
+> Open To Any Suggestions 
 
 # Arch-Hyprland
 
