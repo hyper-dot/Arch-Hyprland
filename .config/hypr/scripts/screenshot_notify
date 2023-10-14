@@ -1,2 +1,2 @@
 #!/bin/sh
-exec notify-send "Screenshot Captured and sotred in ~/Pictures"
+exec notify-send "Screenshot Captured and saved in ~/Pictures/screenshots"

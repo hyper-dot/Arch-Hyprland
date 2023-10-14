@@ -6,7 +6,7 @@ cd ~/
 
 # Variables
 export _JAVA_AWT_WM_NONREPARENTING=1
-export XCURSOR_SIZE=24
+export XCURSOR_SIZE=12
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
@@ -19,9 +19,9 @@ export QT_QPA_PLATFORM="wayland"
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 #env variables for gtk
-gsettings set org.gnome.desktop.interface icon-theme 'Win11-dark'
-gsettings set org.gnome.desktop.interface gtk-theme 'Gruvbox-Dark-BL'
-gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur Cursors'
+gsettings set org.gnome.desktop.interface icon-theme 'ePapirus-Dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Fluent-Dark-compact'
+gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
 gsettings set org.gnome.desktop.interface font-name 'JetBrains Mono NL SemiBold'
 
 # Execute Hyprland
