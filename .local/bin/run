@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Check if an argument is provided
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 <filename>"
+  exit 1
+fi
+
+filename="$1"
+
+# Check if the provided file exists
+if [ ! -f "$filename.cpp" ]; then
+  echo "File not found: $filename.cpp"
+  exit 1
+fi
+
+# Compile and run the C++ program using Clang
+clang++ -o "$filename" "$filename.cpp" && ./"$filename"
