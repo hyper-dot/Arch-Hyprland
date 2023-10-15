@@ -2,27 +2,42 @@
   "layer": "top",
   "position": "bottom",
   "height": 16,
-  "spacing": 2,
+  "spacing": 0,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-right": ["pulseaudio", "clock#date", "clock", "tray"],
+  "modules-left": ["custom/logo", "hyprland/workspaces"],
+  "modules-right": ["pulseaudio", "battery", "clock", "tray"],
 
   "tray": {
     "show-passive-items": true,
     "spacing": 10
   },
 
-  "clock": {
-    "tooltip": false,
-    "format": "  {:%H:%M}"
+  "battery": {
+    "bat": "BAT1",
+    "adapter": "ADP0",
+    "interval": 1,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "max-length": 20,
+    "format": "{icon}{capacity}%",
+    "format-warning": "{icon}{capacity}%",
+    "format-critical": "{icon}{capacity}%",
+    "format-charging": "<span foreground='#26ff55'> {capacity} %</span>",
+    "format-plugged": "<span foreground='#26ff55'>  {capacity}%</span>",
+    "format-alt": "{icon} {time}",
+    "format-full": "<span foreground='#26ff55'> {capacity} %</span>",
+    "format-icons": [" ", " ", " ", " ", " "]
   },
 
-  "clock#date": {
-    "format": "   {:%a %d %b}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  "clock": {
+    "format": "<span color='#6bfffd'> </span>{:%I:%M %p}",
+    "format-alt": "<span color='#ff9854'> </span>{:%a %b %d}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
   "cpu": {
@@ -49,7 +64,6 @@
     },
     "on-click": "pavucontrol"
   },
-
   "custom/logo": {
     "format": "",
     "tooltip": false
